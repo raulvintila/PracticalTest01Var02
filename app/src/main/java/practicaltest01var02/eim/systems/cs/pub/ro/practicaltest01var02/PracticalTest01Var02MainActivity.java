@@ -22,7 +22,6 @@ public class PracticalTest01Var02MainActivity extends AppCompatActivity {
     private EditText upEditText;
     private EditText downEditText;
     private TextView mainTextView;
-    private String lastOperation;
 
     private IntentFilter intentFilter = new IntentFilter();
 
@@ -64,8 +63,7 @@ public class PracticalTest01Var02MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_practical_test01_var02_main);
-
-        lastOperation = "";
+        
 
         plusButton = (Button)findViewById(R.id.plus_button);
         plusButton.setOnClickListener(buttonClickListener);
